@@ -2,6 +2,14 @@
     "recommendations": [
         "ritwickdey.liveserver",
         "bierner.github-markdown-preview",
-        "davidanson.vscode-markdownlint"
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "ms-vscode.powershell",
+        "tylerleonhardt.vscode-inline-values-powershell",
+        "vin-liberty.powershell-snippets",
+        //optional:
+        "johnpapa.vscode-peacock",
+        "tonybaloney.vscode-pets"
     ]
 }
