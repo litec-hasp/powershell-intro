@@ -2,8 +2,7 @@
 
 ### Connecting Powershell-Cmdlets
 
-![](./03-Pipelines/_img/pipeline.png)
-![](./_img/pipeline.png)
+![](https://github.com/litec-hasp/powershell-intro/blob/main/03-Pipelines/_img/pipeline.png)
 
 ---
 
