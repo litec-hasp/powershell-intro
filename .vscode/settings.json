@@ -1,0 +1,10 @@
+{
+    "markdownlint.config": {
+        "default": true,
+        "MD025": false,
+        "MD035": false,
+        //"MD007": { "indent": 4 },
+        "no-hard-tabs": true,
+        "no-inline-html": { "allowed_elements": ["br","small","img","p","div","span"] } 
+    }
+}
