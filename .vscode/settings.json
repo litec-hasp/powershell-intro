@@ -6,5 +6,25 @@
         //"MD007": { "indent": 4 },
         "no-hard-tabs": true,
         "no-inline-html": { "allowed_elements": ["br","small","img","p","div","span"] } 
-    }
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#445c68",
+        "activityBar.background": "#445c68",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#271922",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#445c68",
+        "statusBar.background": "#304149",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#445c68",
+        "statusBarItem.remoteBackground": "#304149",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#304149",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#30414999",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#304149"
 }
