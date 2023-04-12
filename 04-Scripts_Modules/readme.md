@@ -61,16 +61,41 @@ Get-SystemEvent -ComputerName $env:computername
 
 ---
 
-### ExecutionPolicy
+### ExecutionPolicy <small>1/2</small>
 
 > Link: [about_ExecutionPolicy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2)
 
 - safety "feature" to control the loading  of config files and running of scripts
-- default setting is very restrictive 
-  - to prevent the execution of harmful scripts (consider registry entries...)
-  
+- default setting is restrictive - to prevent the execution of harmful scripts
+- can be set for machine /user /session
+- policy is stored in registry
+- non-Windows systems: only `Unrestricted` exists
 
+| Policy         | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| `AllSigned`    | Only scripts signed by a trusted publisher can be run.       |
+| `Bypass`       | No restrictions; all Windows PowerShell scripts can be run.  |
+| `RemoteSigned` | Downloaded scripts must be signed by a trusted publisher before they can be run. |
+| `Restricted`   | No scripts can be run. Windows PowerShell can be used only in interactive mode. |
+| `Unrestricted` | Similar to `Bypass` (If you run an unsigned script that was downloaded from the Internet, you are prompted for permission before it runs.) |
 
+---
+
+### ExecutionPolicy <small>2/2</small>
+
+- Cmdlets: `Get-ExecutionPolicy` and `Set-ExecutionPolicy`
+- "workaround" for single scripts: `pwsh -ExecutionPolicy Bypass .\script.ps1`
+
+```powershell
+# lets see the current policy
+Get-ExecutionPolicy -List
+# Set it to RemoteSigned (if we download modules they need to be signed)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+# or bypass for the current user (not recommended)
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+```
+
+---
 
 
 ### Debugging (Scripts and Functions)
