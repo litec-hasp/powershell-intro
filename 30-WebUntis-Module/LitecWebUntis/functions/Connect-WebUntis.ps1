@@ -5,7 +5,7 @@
 .DESCRIPTION
    Create a session-id/authentification-token for a jsonrpc connection to WebUntis.
 .EXAMPLE
-   Connect-WebUntis -url "https://arche.webuntis.com/WebUntis/jsonrpc.do?school=litec" -Credential (Get-Secret -Name a_bot4untis -Vault botvault)
+   Connect-WebUntis -url "https://arche.webuntis.com/WebUntis/jsonrpc.do?school=litec" -Credential (Get-Secret -Name untisAdmin -Vault untisVault)
    Connects to LiTec's WebUntis instance, with the credentials taken from a Microsoft.PowerShell.SecretStore.
    It might be neccessary to unlock the vault by entering the masterkey word.
 #>
@@ -33,7 +33,7 @@ function Connect-WebUntis
                 # use litec (lazy) default values
                 # @tbd consider to refine this (maybe url OR cred was given)!
                 $Url = "https://arche.webuntis.com/WebUntis/jsonrpc.do?school=litec"
-                $Credential = (Get-Secret -Name a_bot4untis -Vault botvault)
+                $Credential = (Get-Secret -Name untisAdmin -Vault untisVault)
             }
         }
 
