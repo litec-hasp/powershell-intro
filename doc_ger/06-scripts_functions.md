@@ -16,6 +16,7 @@ title: scripts and functions summary
 - Ausführung mit Angabe von relativen (`.\myscript.ps1`) oder absoluten Pfad
   - Liegt Pfad als String vor - Ausführung mit `&`vorangestellt
   - Bsp: `& "$HOME\ps\myscipt.ps1"`
+  - Probleme beim Ausführen? ExceutionPolicy??? [about ExecutionPolicies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2)
 
 ---
 
