@@ -20,7 +20,7 @@
    ```powershell
    # markdown
    code --install-extension bierner.github-markdown-preview
-   code --install-extrnsion davidanson.vscode-markdownlint
+   code --install-extension davidanson.vscode-markdownlint
    # git
    code --install-extension eamodio.gitlens
    code --install-extension mhutchie.git-graph
