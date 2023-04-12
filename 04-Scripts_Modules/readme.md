@@ -56,8 +56,22 @@ Get-SystemEvent -ComputerName $env:computername
 - just store it as an `.ps1`-file
 - call it by using full or relative path
 - lets try it out...
+- oops, ExecutionPolicy doenst allow to start the script?
+- ok, let's solve that problem 
 
 ---
+
+### ExecutionPolicy
+
+> Link: [about_ExecutionPolicy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2)
+
+- safety "feature" to control the loading  of config files and running of scripts
+- default setting is very restrictive 
+  - to prevent the execution of harmful scripts (consider registry entries...)
+  
+
+
+
 
 ### Debugging (Scripts and Functions)
 
