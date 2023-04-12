@@ -11,7 +11,7 @@ Get-ExecutionPolicy
 
 # Invoke-Command
 
-# locla modules
+# local modules
 # https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-module?source=recommendations&view=powershell-7.3
 Get-InstalledModule
 Get-Module
