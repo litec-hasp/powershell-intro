@@ -121,7 +121,7 @@ Stop-Process -ProcessName pwsh
 ## [Discover Commands](https://learn.microsoft.com/en-us/training/modules/discover-commands)
 
 - maybe you noticed that `Get-Help` asked to install the help system
-  - can also be done manually: `Update-Help -UICulture en-US` (or `de-DE`)
+  - can also be done manually: `Update-Help -UICulture en-US -ErrorAction Continue` (or `de-DE`)
   - `-UI-Culture` is optional on windows, but needed on *nix systems
 - Help sections:
   - NAME, SYNTAX, ALIAS, REMARKS, PARAMETERS
