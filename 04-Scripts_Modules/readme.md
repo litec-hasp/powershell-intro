@@ -84,7 +84,9 @@ Get-SystemEvent -ComputerName $env:computername
 ### ExecutionPolicy <small>2/2</small>
 
 - Cmdlets: `Get-ExecutionPolicy` and `Set-ExecutionPolicy`
-- "workaround" for single scripts: `pwsh -ExecutionPolicy Bypass .\script.ps1`
+- "workaround" for single scripts: 
+  - `pwsh -ExecutionPolicy Bypass .\script.ps1`
+  - `pwsh -ep Bypass .\script.ps1`
 
 ```powershell
 # lets see the current policy
@@ -104,6 +106,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 
 - **Use VS Code!** 
   - `F5` and especially `F8` are your best friends (and breakpoints!)
+  - :warning: ensure that the terminal "PowerShell Extension" is active/open!
 - or add specific Output:
 
   | Cmdlet            | Description                                          |
