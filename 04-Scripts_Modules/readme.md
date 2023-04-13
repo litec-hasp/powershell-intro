@@ -145,7 +145,11 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 - Recommended way to use:
   1. Review:  use `Save-Module` to download and review the package
   2. Install: use `Install-Module` (if only for current user use `-Scope CurrentUser` Parameter)
-  3. Use: `Import-Module`
+  3. [optional] Use: `Import-Module`
+  
+> You have more verisions of a module installed? 
+> - default is to use the "newest" version
+> - to use an alternative version: `Import-Module -Name BurntToast -RequiredVersion 0.8.5`
 
 ---
 
