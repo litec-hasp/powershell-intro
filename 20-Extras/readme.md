@@ -1,6 +1,14 @@
 # EXTRAS
 
 > Stuff to discuss about...
+> Mentioned Tools
+
+---
+
+## Interesting Tools
+
+- Convert Powershell script to executable: [ps2exe](https://www.powershellgallery.com/packages/ps2exe/1.0.4)
+- Write one script - us it for cmd / powershell and bash: [polyshell](https://github.com/llamasoft/polyshell)
 
 ## General Topics
 
