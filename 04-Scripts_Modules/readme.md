@@ -84,7 +84,9 @@ Get-SystemEvent -ComputerName $env:computername
 ### ExecutionPolicy <small>2/2</small>
 
 - Cmdlets: `Get-ExecutionPolicy` and `Set-ExecutionPolicy`
-- "workaround" for single scripts: `pwsh -ExecutionPolicy Bypass .\script.ps1`
+- "workaround" for single scripts: 
+  - `pwsh -ExecutionPolicy Bypass .\script.ps1`
+  - `pwsh -ep Bypass .\script.ps1`
 
 ```powershell
 # lets see the current policy
@@ -104,6 +106,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 
 - **Use VS Code!** 
   - `F5` and especially `F8` are your best friends (and breakpoints!)
+  - :warning: ensure that the terminal "PowerShell Extension" is active/open!
 - or add specific Output:
 
   | Cmdlet            | Description                                          |
@@ -142,7 +145,11 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 - Recommended way to use:
   1. Review:  use `Save-Module` to download and review the package
   2. Install: use `Install-Module` (if only for current user use `-Scope CurrentUser` Parameter)
-  3. Use: `Import-Module`
+  3. [optional] Use: `Import-Module`
+  
+> You have more verisions of a module installed? 
+> - default is to use the "newest" version
+> - to use an alternative version: `Import-Module -Name BurntToast -RequiredVersion 0.8.5`
 
 ---
 
