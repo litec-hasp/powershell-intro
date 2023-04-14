@@ -1,0 +1,15 @@
+<Window x:Class="PoShWPF.GetFixedDisks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoShWPF"
+        mc:Ignorable="d"
+        Title="GetFixedDisks" Height="325" Width="400">
+    <Grid>
+        <Label Content="Computer Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtComp" HorizontalAlignment="Left" Margin="116,14,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="btnQuery" Content="Query" HorizontalAlignment="Left" Margin="300,13,0,0" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="txtResults" HorizontalAlignment="Center" Margin="0,51,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Height="247"/>
+    </Grid>
+</Window>
